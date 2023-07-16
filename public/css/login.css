@@ -1,0 +1,8 @@
+:root,
+:host {
+  --color-background: #8558BF;
+}
+
+.button-grey {
+  --button-background: #5D5C5E;
+}
