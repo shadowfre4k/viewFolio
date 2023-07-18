@@ -38,7 +38,6 @@ User.init(
         len: [8],
       },
     },
-    tickers: [],
   },
   {
     hooks: {
