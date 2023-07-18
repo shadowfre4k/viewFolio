@@ -6,5 +6,5 @@ const signUp = require('./signupRoute');
 
 router.use("/", home);
 router.use("/api", apiRoutes);
-router.use('/', signUp);
+router.use('/signup', signUp);
 module.exports = router;
