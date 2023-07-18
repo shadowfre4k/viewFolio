@@ -1,0 +1,8 @@
+:root,
+:host {
+  --color-background: #8558BF;
+}
+
+.center {
+  text-align: center;
+}
