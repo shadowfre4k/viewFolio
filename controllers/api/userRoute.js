@@ -1,8 +1,25 @@
 const router = require("express").Router();
-const { User } = require("../../models");
+const { User, Favorite, Stock } = require("../../models");
+const getStocks = require("../../utils/getStocks");
 
+//Get stock data
+router.get("/", async (req, res) => {
+  const response = await getStocks();
+  res.json(response);
+});
+
+//test get user
+// router.get("/users", async (req, res) => {
+//   try {
+//     const userData = await User.findAll({});
+//     res.status("200").json(userData);
+//   } catch (err) {
+//     res.status("did not successfuly respond");
+//   }
+// });
+
+//add user
 router.post("/", async (req, res) => {
-  res.message("hit this point");
   try {
     const userData = await User.create(req.body);
 
@@ -17,6 +34,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+//******************LOGIN******************* */
 router.post("/login", async (req, res) => {
   res.message("hit this point");
   try {
@@ -49,6 +67,8 @@ router.post("/login", async (req, res) => {
   }
 });
 
+/***************************************LOGOUT************************************* */
+
 router.post("/logout", (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
@@ -59,13 +79,14 @@ router.post("/logout", (req, res) => {
   }
 });
 
+/***************************************SIGNUP************************************* */
 router.post("/signup", async (req, res) => {
   try {
     console.log(req.body);
-    const userData = await User.create(req.body)
-      res.status(200).json(userData)
-  } catch(err) {
-      res.status(400).json(err);
+    const userData = await User.create(req.body);
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(400).json(err);
   }
 });
 
