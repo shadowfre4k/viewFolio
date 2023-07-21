@@ -2,8 +2,8 @@ const router = require("express").Router();
 const { User, Favorite, Stock } = require("../../models");
 const getStocks = require("../../utils/getStocks");
 
-//Get stock data
-router.get("/", async (req, res) => {
+//Get stock data. need to move out
+router.get("/stocks", async (req, res) => {
   const response = await getStocks();
   res.json(response);
 });
