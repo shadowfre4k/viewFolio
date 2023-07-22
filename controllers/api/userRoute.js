@@ -1,22 +1,7 @@
 const router = require("express").Router();
 const { User, Favorite, Stock } = require("../../models");
 const getStocks = require("../../utils/getStocks");
-
-//Get stock data
-router.get("/", async (req, res) => {
-  const response = await getStocks();
-  res.json(response);
-});
-
-//test get user
-// router.get("/users", async (req, res) => {
-//   try {
-//     const userData = await User.findAll({});
-//     res.status("200").json(userData);
-//   } catch (err) {
-//     res.status("did not successfuly respond");
-//   }
-// });
+const withAuth = require("../../utils/auth");
 
 //add user
 router.post("/", async (req, res) => {
@@ -68,7 +53,7 @@ router.post("/login", async (req, res) => {
 
 /***************************************LOGOUT************************************* */
 
-router.post("/logout", (req, res) => {
+router.post("/signout", (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
