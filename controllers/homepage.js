@@ -1,5 +1,5 @@
-const getStocks = require("../utils/getStocks");
-const { User, Favorite, Stock, StockL } = require("../models");
+const { getStocks } = require("../utils/getStocks");
+const { Stock, StockL } = require("../models");
 
 const router = require("express").Router();
 
@@ -15,4 +15,3 @@ router.get("/", async (req, res) => {
 });
 
 module.exports = router;
-

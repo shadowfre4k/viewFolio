@@ -2,7 +2,7 @@ const signupFormHandler = async (event) => {
   // event.preventDefault();
 
   //collectValues
-  console.log("this also has been clicked");
+
   const firstName = document.querySelector("#firstName").value.trim();
   const lastName = document.querySelector("#lastName").value.trim();
   const email = document.querySelector("#email").value.trim();
@@ -24,7 +24,7 @@ const signupFormHandler = async (event) => {
 };
 
 const signUpButton = document.querySelector("#signUpButton");
+
 signUpButton.addEventListener("click", function (event) {
-  console.log("this has been clicked");
   signupFormHandler();
 });

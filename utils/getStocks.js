@@ -1,11 +1,9 @@
 const axios = require("axios");
-
-const { User, Favorite, Stock } = require("../models");
 require("dotenv").config();
 
 // get stock data
 const getStocks = async () => {
-  let request = `https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=${process.env.ALPHAVANTAGE_KEY}`;
+  let request = `https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&limit=5&apikey=${process.env.ALPHAVANTAGE_KEY}`;
   let { data } = await axios.get(request);
   return data;
 };
@@ -28,4 +26,5 @@ const getFavorites = async (symbol) => {
   const bottomVolumn = data.top_losers[1].volumn;
   return data;
 };
-module.exports = getStocks;
+
+module.exports = { getStocks };

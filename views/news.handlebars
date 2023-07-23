@@ -22,37 +22,45 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button id="search-btn" class="btn" type="submit">Search</button>
+          <input class="form-control me-2 symbolEl" type="search" placeholder="Search" aria-label="Search">
+          <button id="search-btn" class="btn"  >Search</button>
         </form>
       </div>
     </div>
   </nav>
+  
 </header>
 <body>
   <h1 class="position-absolute top-25 start-50 translate-middle-x"> Stock News</h1>
   <br>
   <br>
   <br>
-  <div class="container-xxl text-center">
+  <div class="container-xxl text-center ">
     <div class="row">
-      <div class="col-4">
-          <h3>Top Gainers</h3>
-        {{#each stocks as |stock|}}
-        {{> stock-news}} <!-- handlebar partials-->
-        {{/each}}
+      <div class="col-4 ">
+          <h3 >Top Gainers</h3>
+       
+            <div class="overflow-auto">
+            {{#each stocks as |stock|}}
+            {{> stock-news}}
+            {{/each}}
+           </div>
+     
           </div>
 
-           <div class="col-4">
+           <div class="col-4 ">
           <h3>Top Losers</h3>
+         
+            <div class="overflow-auto">
             {{#each stocksL as |stock|}}
-        {{> stockL-news}} <!-- handlebar partials-->
-        {{/each}}
-          
+            {{> stockL-news}} 
+            {{/each}}
+          </div>
       </div> 
 
     
   </div>
   <script src="/js/signout.js"></script>
+   <script src="/js/search.js"></script>
 </body>
 
