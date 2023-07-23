@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Stock extends Model {}
+class StockL extends Model {}
 
-Stock.init(
+StockL.init(
   {
     ticker: {
       type: DataTypes.STRING,
@@ -33,8 +33,8 @@ Stock.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "stock",
+    modelName: "stockL",
   }
 );
 
-module.exports = Stock;
+module.exports = StockL;

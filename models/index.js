@@ -1,5 +1,6 @@
 const User = require("./user");
 const Stock = require("./stock");
+const StockL = require("./stockL");
 const Favorite = require("./favorite");
 
 User.belongsToMany(Stock, {
@@ -8,4 +9,4 @@ User.belongsToMany(Stock, {
 Stock.belongsToMany(User, {
   through: Favorite,
 });
-module.exports = { User, Stock };
+module.exports = { User, Stock, StockL };

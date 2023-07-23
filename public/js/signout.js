@@ -1,7 +1,15 @@
-const signOut = document.querySelector("signOutbutton");
+const signOut = async (event) => {
+  console.log("Hello");
+  const response = await fetch("/api/signout", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+  });
 
-signOut.addEventListener("click", function (event) {
-  signOutFormHandler = async();
-});
+  if (response.ok) {
+    document.location.replace("/");
+  } else {
+    alert(response.statusText);
+  }
+};
 
-const signOutFormHandler = async (event) => {};
+document.querySelector("#signout").addEventListener("click", signOut);

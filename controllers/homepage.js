@@ -1,7 +1,17 @@
+const getStocks = require("../utils/getStocks");
+const { User, Favorite, Stock, StockL } = require("../models");
+
 const router = require("express").Router();
 
 router.get("/", async (req, res) => {
-  res.render("./homepage");
+  try {
+    data = await getStocks();
+    Stock.bulkCreate(data.top_gainers, { ignoreDuplicates: true });
+    StockL.bulkCreate(data.top_losers, { ignoreDuplicates: true });
+    res.render("homepage");
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
