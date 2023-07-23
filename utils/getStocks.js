@@ -1,4 +1,5 @@
 const axios = require("axios");
+
 const { User, Favorite, Stock } = require("../models");
 require("dotenv").config();
 
@@ -16,6 +17,7 @@ const getFavorites = async (symbol) => {
   let { data } = await axios.get(request);
 
   const favorite = data;
+
   const topPrice = data.top_gainers[0].price;
   const bottomPrice = data.top_losers[1].price;
   const topAmount = data.top_gainers[0].change_amount;
@@ -26,5 +28,4 @@ const getFavorites = async (symbol) => {
   const bottomVolumn = data.top_losers[1].volumn;
   return data;
 };
-
 module.exports = getStocks;
