@@ -1,8 +1,8 @@
-header{
+header ,footer{
     background-color: #8558BF;
 }
 html ,body{
-    background-color: #9a9c9a;
+    background-color: #ffffff;
     margin: 0;
     height: 100%;
     

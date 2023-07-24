@@ -2,12 +2,11 @@
 header{
     background-color: #8558BF;
 }
-html, body {
+html , body{
     margin: 0;
     height: 100%;
-    background-color: #9a9c9a;
+    background-color: #ffffff;
 }
-
-card-item{
-    background-color: #9a9c9a;
+#card-fav{
+    background-color:#9a9c9a ;
 }
