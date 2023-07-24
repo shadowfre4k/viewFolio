@@ -3,7 +3,7 @@ Fullstack stock ticker application
 
 ## Description
 
-This webpage was built to assist the user in tracking their favoirte stocks.  The user can monitor the price, change in prince, change in percentage and volumn of the stocks that they have favorited. The packages that were used to build this application are blaze, axios, bcrypt, bootstrap icons, sequilize, express, handlebars, MySQL2, eslint, and prettier.  We made multipe API calls to the Alphavantage and Polygon APIs to get the daily information pertaning to their stocks and the index funds listed on the right side bar.  
+This webpage was built to assist the user in tracking their favoirte stocks.  The user can monitor the price, change in prince, change in percentage and volumn of the stocks that they have favorited. The packages that were used to build this application were blaze, axios, bcrypt, bootstrap icons, sequilize, express, handlebars, MySQL2, eslint, and prettier.  We made multipe API calls to the Alphavantage API to get the daily information pertaning to their stocks and the index funds listed on the right side bar.  
 
 ## Technologies Used 
 
@@ -16,11 +16,11 @@ APIs
 ## Installation
 
 ViewFolio URL: 
-Heroku URL: 
+Heroku URL: https://secure-sands-25649-e4efe5e3aa6b.herokuapp.com/
 
 ## Usage
 
-The user will load the webpage and take the user directly to the login page.  There is a sign up button if the user has not created an account before.  Once the user logs in they will be taked to the home page where they can search for stocks to favorite, view their history, view the health of the index funds, and see stats about their favorite stocks.      
+The user will load the webpage and take the user directly to the login page.  There is a sign up button if the user has not created an account before.  Once the user logs in they will be taked to the home page where they can search for stocks to favorite, view the health of index funds, and see stats about their favorite stocks.      
 
 ## Screenshot
 
@@ -45,4 +45,8 @@ This project is licensed under MIT.
 
 ## Future Development
 
-1. 
+1. The user will be able to favorite a stock to follow.
+2. Adding a history section on the left of the homescreen 
+3. Allowing the user to trade stocks directly from the app 
+4. Add alerts so the user knows when a stock price dropped or rose a certain percentage 
+

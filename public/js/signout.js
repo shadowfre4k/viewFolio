@@ -1,3 +1,4 @@
+//request to signout//
 const signOut = async (event) => {
   console.log("Hello");
   const response = await fetch("/api/signout", {

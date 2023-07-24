@@ -26,7 +26,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input id="search-bar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button id="search-bar" class="btn" type="submit">Search</button>
+          <button id="search-btn" class="btn" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -41,18 +41,19 @@
   <div class="container text-center">
     <div class="row">
       
-        <h3>Your Favorites </h3>
+        <h3>Your Search </h3>
         <br>
         <div id="card-fav" class="card--bs-secondary-bg border shadow-lg">
         <br>
-          <h5 id="company-name" class="card-header">Apple Inc</h5>
-          <div class="card-body">
+        
+                  <div class="card-body">
             <h5 id="stock-name" class="card-title">AAPL</h5>
             <br>
             <button id="open-btn" type="button" class="btn btn-light btn-lg rounded-pill">Open: 191.90</button>
-            <button id="close-btn" type="button" class="btn btn-success btn-lg rounded-pill">Close: 193.99</button>
-            <button id="dif-btn" type="button" class="btn btn-success btn-lg rounded-pill">High: 3.30</button>
-            <button id="dif-btn" type="button" class="btn btn-success btn-lg rounded-pill">Low: 3.30</button>
+            <button id="close-btn" type="button" class="btn btn-light btn-lg rounded-pill">Close: 193.99</button>
+            <button id="high-btn" type="button" class="btn btn-light btn-lg rounded-pill">High: 3.30</button>
+            <button id="low-btn" type="button" class="btn btn-light btn-lg rounded-pill">Low: 3.30</button>
+
           </div>
           <br>
           <button id="fav-button" type="button" class="btn btn-warning btn-sm rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-piggy-bank" viewBox="0 0 16 16">
@@ -65,6 +66,7 @@
     </div>
   </div>
 <script src="/js/signout.js"></script>
+<script src="/js/search.js"></script>
 </body>
 
 
