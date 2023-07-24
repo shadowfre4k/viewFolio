@@ -1,3 +1,4 @@
+//news routes//
 const router = require("express").Router();
 const { Stock, StockL } = require("../models");
 router.get("/", async (req, res) => {

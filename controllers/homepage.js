@@ -1,8 +1,10 @@
+//imports//
 const getStocks = require("../utils/getStocks");
-const { User, Favorite, Stock, StockL } = require("../models");
+const { Stock, StockL } = require("../models");
 
 const router = require("express").Router();
 
+//creating top gainer and top loser model// //rendering homepage//
 router.get("/", async (req, res) => {
   try {
     data = await getStocks();

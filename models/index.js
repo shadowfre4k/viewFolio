@@ -1,3 +1,4 @@
+//Creates relationship between stock and user through favorite//
 const User = require("./user");
 const Stock = require("./stock");
 const StockL = require("./stockL");
