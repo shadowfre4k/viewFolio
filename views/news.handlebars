@@ -24,7 +24,6 @@
       </div>
     </div>
   </nav>
-  
 </header>
 <body>
   <h1 class="position-absolute top-25 start-50 translate-middle-x"> Stock News</h1>
@@ -43,8 +42,6 @@
 
            <div class="col-6">
           <h3>Top Losers</h3>
-         
-            <div class="overflow-auto">
             {{#each stocksL as |stock|}}
         {{> stockL-news}} <!-- handlebar partials-->
         <br>
@@ -56,6 +53,4 @@
   </div>
   
   <script src="/js/signout.js"></script>
-   <script src="/js/search.js"></script>
 </body>
-

@@ -22,7 +22,7 @@ const signupFormHandler = async (event) => {
 };
 
 const signUpButton = document.querySelector("#signUpButton");
-
 signUpButton.addEventListener("click", function (event) {
+  console.log("this has been clicked");
   signupFormHandler();
 });

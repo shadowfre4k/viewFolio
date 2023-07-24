@@ -2,7 +2,6 @@
 const router = require("express").Router();
 const { Stock, StockL } = require("../models");
 router.get("/", async (req, res) => {
-
   try {
     const stockData = await Stock.findAll();
     const stockDataL = await StockL.findAll();
@@ -16,5 +15,3 @@ router.get("/", async (req, res) => {
   }
 });
 module.exports = router;
-
-

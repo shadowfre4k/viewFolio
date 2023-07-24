@@ -9,20 +9,10 @@ body {
   height: 100%;
 }
 
-body {
-  background-color: #9a9c9a;
-  margin: 0;
-  height: 100vh;
-}
-
 card-item {
   background-color: #9a9c9a;
 }
 
 .card {
   background-color: #9a9c9a;
-}
-
-.overflow-auto {
-  height: 20%;
 }
