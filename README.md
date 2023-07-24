@@ -1,13 +1,14 @@
-# viewFolio 
-Fullstack stock ticker application
+# ViewFolio
+Fullstack Stock Ticker Application
 
 ## Description
 
-This webpage was built to assist the user in tracking their favoirte stocks.  The user can monitor the price, change in prince, change in percentage and volumn of the stocks that they have favorited. The packages that were used to build this application were blaze, axios, bcrypt, bootstrap icons, sequilize, express, handlebars, MySQL2, eslint, and prettier.  We made multipe API calls to the Alphavantage API to get the daily information pertaning to their stocks and the index funds listed on the right side bar.  
+This webpage was built to assist the user in tracking their favoirte stocks.  The user can monitor the priceof thet stock, open price, close price, the highest price and lowest price of the day. The stock news tab will show the top gainers and losers of the day. Using the Alphavantage API the user can view the price, change price, change percentage and volumn of the top stocks.  The packages that were used to build this application were blaze, axios, bcrypt, bootstrap icons, sequilize, express, handlebars, MySQL2, eslint, and prettier.  We made multipe API calls to the Alphavantage API to get the daily information pertaning to the searched stocks and the top gainers and losers listed on the stock news page.  
 
 ## Technologies Used 
 
 Axios: https://axios-http.com/docs/intro
+
 Bootstrap: https://getbootstrap.com/
 
 APIs 
@@ -15,16 +16,17 @@ APIs
 
 ## Installation
 
-ViewFolio URL: 
+ViewFolio Repo URL: https://github.com/shadowfre4k/viewFolio
+
 Heroku URL: https://secure-sands-25649-e4efe5e3aa6b.herokuapp.com/
 
 ## Usage
 
-The user will load the webpage and take the user directly to the login page.  There is a sign up button if the user has not created an account before.  Once the user logs in they will be taked to the home page where they can search for stocks to favorite, view the health of index funds, and see stats about their favorite stocks.      
+Once the webpage loads the user will be prompted to login or sing up if a first time user. Once the user logs in they will be taken to the home page where they can search for stocks to view pertaining to that stock for the day. The user will also be able to click the Stock News link at the top left to view stats pertaining to the top gainers and losers of the day.       
 
 ## Screenshot
 
-![Alt Text](Images/Screenshot.png)
+![Alt Text](public/images/Screenshot.png)
 
 
 ## Credits
