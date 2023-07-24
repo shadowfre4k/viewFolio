@@ -1,13 +1,12 @@
-
-header{
-    background-color: #8558BF;
+header {
+  background-color: #8558bf;
 }
-html, body {
-    margin: 0;
-    height: 100%;
-    background-color: #9a9c9a;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #ffffff;
 }
-
-card-item{
-    background-color: #9a9c9a;
+#card-fav {
+  background-color: #9a9c9a;
 }

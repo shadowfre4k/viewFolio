@@ -1,5 +1,12 @@
-header {
+header,
+footer {
   background-color: #8558bf;
+}
+html,
+body {
+  background-color: #ffffff;
+  margin: 0;
+  height: 100%;
 }
 
 body {

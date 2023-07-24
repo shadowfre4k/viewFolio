@@ -1,4 +1,6 @@
-<div class="card border border-white">
+{{! Top Gainers Partial   }}
+<div class="card border border-white shadow-sm">
+
   <div id="company-name" class="card-header">
     <h5>{{ticker}}</h5>
   </div>
@@ -7,12 +9,12 @@
     <button
       id="pice-btn"
       type="button"
-      class="btn btn-outline-light col-4 rounded-pill"
+      class="btn btn-light col-4 rounded-pill"
     >Price:{{price}}</button>
     <button
       id="price-chnage-btn"
       type="button"
-      class="btn btn-outline-success col-4 rounded-pill"
+      class="btn btn-success col-4 rounded-pill"
     >$Change:<svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -29,7 +31,7 @@
     <button
       id="percent-change-btn"
       type="button"
-      class="btn btn-outline-success col-4 rounded-pill"
+      class="btn btn-success col-4 rounded-pill"
     >%Change:<svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -46,7 +48,7 @@
     <button
       id="volume-btn"
       type="button"
-      class="btn btn-outline-light col-4 rounded-pill"
+      class="btn btn-light col-4 rounded-pill"
     >Volume: {{volume}}</button>
   </div>
 </div>
