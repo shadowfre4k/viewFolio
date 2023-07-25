@@ -1,6 +1,5 @@
 //creating a user//
 const signupFormHandler = async (event) => {
-
   //collectValues
   const firstName = document.querySelector("#firstName").value.trim();
   const lastName = document.querySelector("#lastName").value.trim();

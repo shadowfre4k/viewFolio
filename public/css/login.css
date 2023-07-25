@@ -1,17 +1,13 @@
-:root,
-:host {
-  --color-background: #8558BF;
-}
-
 .center {
   text-align: center;
 }
 
-main{
-  background-color: #8558BF;
+html,
+body {
+  background-color: #8558bf;
 }
 
-link{
+link {
   text-decoration: none;
   text-align: center;
 }

@@ -3,7 +3,6 @@ const { User, Favorite, Stock } = require("../../models");
 const getStocks = require("../../utils/getStocks");
 const withAuth = require("../../utils/auth");
 
-
 //add user
 router.post("/", async (req, res) => {
   try {

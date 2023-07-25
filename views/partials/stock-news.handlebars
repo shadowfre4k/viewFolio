@@ -1,20 +1,54 @@
+{{! Top Gainers Partial   }}
+<div class="card border border-white shadow-sm">
 
-   {{!-- Top Gainers Partial   --}}
-    <div class="card border border-white shadow-sm">
-
-            <div id="company-name" class="card-header">
-              <h5>{{ticker}}</h5>
-              </div>
-              <div class="card-body">
-              <h6 id="sotck-name" class="card-title"></h6>
-              <button id="pice-btn" type="button" class="btn btn-light col-4 rounded-pill">Price:{{price}}</button>
-              <button id="price-chnage-btn" type="button" class="btn btn-success col-4 rounded-pill">$Change:<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
-              </svg>{{change_amount}}</button>
-              <button id="percent-change-btn" type="button" class="btn btn-success col-4 rounded-pill">%Change:<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
-              </svg>{{change_percentage}}</button>
-              <button id="volume-btn" type="button" class="btn btn-light col-4 rounded-pill">Volume: {{volume}}</button>
-            </div>
-          </div>
-     
+  <div id="company-name" class="card-header">
+    <h5>{{ticker}}</h5>
+  </div>
+  <div class="card-body">
+    <h6 id="sotck-name" class="card-title"></h6>
+    <button
+      id="pice-btn"
+      type="button"
+      class="btn btn-light col-4 rounded-pill"
+    >Price:{{price}}</button>
+    <button
+      id="price-chnage-btn"
+      type="button"
+      class="btn btn-success col-4 rounded-pill"
+    >$Change:<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-up-short"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+        />
+      </svg>{{change_amount}}</button>
+    <button
+      id="percent-change-btn"
+      type="button"
+      class="btn btn-success col-4 rounded-pill"
+    >%Change:<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-up-short"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+        />
+      </svg>{{change_percentage}}</button>
+    <button
+      id="volume-btn"
+      type="button"
+      class="btn btn-light col-4 rounded-pill"
+    >Volume: {{volume}}</button>
+  </div>
+</div>

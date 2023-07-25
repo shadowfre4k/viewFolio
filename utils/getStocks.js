@@ -9,5 +9,4 @@ const getStocks = async () => {
   return data;
 };
 
-module.exports =  getStocks
-
+module.exports = getStocks;

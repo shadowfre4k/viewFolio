@@ -1,17 +1,18 @@
-header ,footer{
-    background-color: #8558BF;
+header,
+footer {
+  background-color: #8558bf;
 }
-html ,body{
-    background-color: #ffffff;
-    margin: 0;
-    height: 100%;
-    
-}
-
-card-item{
-    background-color: #9a9c9a;
+html,
+body {
+  background-color: #ffffff;
+  margin: 0;
+  height: 100%;
 }
 
-.card{
-    background-color: #9a9c9a;
+card-item {
+  background-color: #9a9c9a;
+}
+
+.card {
+  background-color: #9a9c9a;
 }
